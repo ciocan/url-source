@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    ports:
+      - "3033:3033"
+    restart: on-failure:0
+networks:
+  debian_default:
+    external: true
